@@ -25,13 +25,12 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 
 
 # **TO-DO Requirements**
-- Cache at least one element using selectElementById.
-- Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
+
 - Iterate over a collection of elements to accomplish some task.
 - Create at least one element using createElement.
 - Use appendChild and/or prepend to add new elements to the DOM.
 - Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content.
---- You can reuse a page you made from a previous SBA and add the Validation to it. ---
+
 - Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
 - Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
 - Register at least two different event listeners and create the associated event handler functions.
@@ -46,3 +45,6 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 
 # **Finished Requirements**
 - Cache at least one element using querySelector or querySelectorAll.
+--- You can reuse a page you made from a previous SBA and add the Validation to it. ---
+- Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
+- Cache at least one element using selectElementById. // getElementId

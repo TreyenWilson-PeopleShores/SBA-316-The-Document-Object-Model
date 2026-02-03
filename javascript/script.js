@@ -1,14 +1,11 @@
-
-
-
-
 let imageClass = document.querySelector(".images");
-let images = []; //simages[0] = imageClass.firstElementChild;
+let images = []; //
 console.log(imageClass);
 for (let i = 0; i<imageClass.childElementCount; i++){
     //this loop dynamically stores each image div element
     images[i] = imageClass.firstElementChild;
     if(i===0){
+        //This sets the initial location
         images[i] = imageClass.firstElementChild;
     } else if(i===imageClass.childElementCount-1){
         images[i] = imageClass.lastElementChild;
@@ -23,3 +20,28 @@ console.log(images);
  //   console.log(prePizza);
 
 //})
+
+let preferencePizza = document.getElementById("preference-pizza");
+let homePizzaText = document.getElementById("homemadeBodyText");
+let frozenPizzaText = document.getElementById("frozenBodyText");
+
+preferencePizza.addEventListener("input", function(event){
+    preferedPizzaTop = preferencePizza.value;
+    if(preferedPizzaTop==="cheese"||preferedPizzaTop==="Cheese"){
+        //Add form validation to this for requiring lowercase or uppsercase CHEESE
+        alert("CHEESE");
+        homePizzaText.innerHTML = "<p>You would <em><b>not</b></em> like this pizza, it has pepperoni on it.</p>"
+
+    } else if(preferedPizzaTop==="pepperoni"||preferedPizzaTop==="Pepperoni"){
+        alert("PEPPERONI");
+        frozenPizzaText.innerHTML = "<p>You would <em><b>LOVE</b></em> this pizza, it has pepperoni on it!</p>"
+
+    }
+})
+
+let email = document.getElementById("email");
+
+email.addEventListener("input", function(event){
+    console.log(email.value);
+
+})

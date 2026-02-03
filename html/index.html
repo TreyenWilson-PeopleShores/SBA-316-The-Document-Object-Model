@@ -41,7 +41,7 @@
                 <div class="page-header">
                     <h2 style="color: rgb(248, 230, 230)">Homemade Pizza</h2>
                 </div>
-                <p>Ths pizza is homemade and has cheese, pizza sauce, and pepperoni.</p> </p>
+                <p id="homemadeBodyText">Ths pizza is homemade and has cheese, pizza sauce, and pepperoni.</p> </p>
                 <p>Here is a page for production informaiton: <a href="https://www.iheartnaptime.net/pepperoni-pizza-recipe/"  style="color:rgb(170, 88, 58)">More information</a></p>
             </div>
 
@@ -74,9 +74,7 @@
 
         <div class="questions p-2">
             <form class ="p-2">
-                <label for="favorite-pizza">What is your favorite movie?</label>
-                <input placeholder = "Favorite Pizza" type="pizza" id="favorite-pizza" name="favorite-pizza">
-
+           
                 <label for="email">What is your email?</label>
                 <input placeholder = "Your Email" type="email" id="email" name="email">
             </form>
@@ -87,11 +85,12 @@
             <div class="dropdown">
                 <div class="sub1 card bg-light text-center m-0 p-2">
 
-                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" id="nav-button">Navigate to other pages</button>
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" id="pizza-button">Pizza Types</button>
                     <div class="dropdown-menu">
-                        <a href="main.html" class="dropdown-item">Home Page</a>
-                        <a href="bttf.html" class="dropdown-item">Back to the Future Production</a>
-                        <a href="ttm.html" class="dropdown-item">The Time Machine Movie Production</a>
+                        <a id="cheese-dropdown" class="dropdown-item">Cheese</a>
+                         <!--Changes the page yellow-->
+                        <a id ="pepperoni" class="dropdown-item">Pepperoni</a>
+                         <!--Changes the page red-->
                     </div>
                 </div>
             </div> 
