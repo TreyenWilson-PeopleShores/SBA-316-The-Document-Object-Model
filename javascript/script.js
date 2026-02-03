@@ -27,16 +27,26 @@ let frozenPizzaText = document.getElementById("frozenBodyText");
 
 preferencePizza.addEventListener("input", function(event){
     preferredPizzaTop = preferencePizza.value;
-    if(preferredPizzaTop==="cheese"||preferredPizzaTop==="Cheese"){
-        //Add form validation to this for requiring lowercase or uppsercase CHEESE
-        alert("CHEESE");
-        homePizzaText.innerHTML = "<p>You would <em><b>not</b></em> like this pizza, it has pepperoni on it.</p>"
-        console.log(screen.height);
-    } else if(preferredPizzaTop==="pepperoni"||preferredPizzaTop==="Pepperoni"){
-        alert("PEPPERONI");
-        frozenPizzaText.innerHTML = "<p>You would <em><b>LOVE</b></em> this pizza, it has pepperoni on it!</p>"
-        console.log(screen.width);
+    if(preferredPizzaTop.search(/[a-z]/)===0){ //validation attempt - FAIL
+        if(preferredPizzaTop==="CHEESE"){
+            //Add form validation to this for requiring lowercase or uppsercase CHEESE
+            alert("CHEESE");
+            homePizzaText.innerHTML = "<p>You would <em><b>not</b></em> like this pizza, it has pepperoni on it.</p>"
+            console.log(screen.height);
+        } else if(preferredPizzaTop==="PEPPERONI"){
+            alert("PEPPERONI");
+            frozenPizzaText.innerHTML = "<p>You would <em><b>LOVE</b></em> this pizza, it has pepperoni on it!</p>"
+            console.log(screen.width);
+        }
+    } else{
+        event.preventDefault();
+        alert("You have to enter full upercase!");
     }
+
+
+
+
+ 
 })
 
 let dropDownMenu = document.getElementById("pizza-dropdown");
@@ -71,3 +81,9 @@ email.addEventListener("submit", function(event){
     event.preventDefault();
     alert("ERROR");
 });
+
+
+function validateLowerCase(){
+    let pizzaPreferenceValue = preferencePizza.value;
+
+}
