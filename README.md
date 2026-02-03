@@ -3,6 +3,11 @@
 This is a recipe page on how to bake a pizza. - List Pizza Recipe as the content - Ragu Pizza Sauce
 Use this as an example ReadMe as a format guide: https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc
 
+
+To run this, make sure to download each folder. Open the index.html in the html folder in a browser.
+
+This webpage is about pepperoni and cheese pizza. Various effects happened based on picking peperoni or cheese.
+
 **Instructions**
 
 You will create a small single-page web application. The topic and content of this application is entirely up to you; be creative!
@@ -27,12 +32,9 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 # **TO-DO Requirements**
 
 
-- Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content.
 
 
 
-- Register at least two different event listeners and create the associated event handler functions.
-- Use at least two Browser Object Model (BOM) properties or methods.
 - Include at least one form and/or input with HTML attribute validation.
 - Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, but should include event-based validation in addition to the HTML attribute validation.)
 - Ensure that the program runs without errors (comment out things that do not work, and explain your blockers - you can still receive partial credit).
@@ -51,3 +53,6 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 - Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
 - Create at least one element using createElement.
 - Use appendChild and/or prepend to add new elements to the DOM.
+- Register at least two different event listeners and create the associated event handler functions.
+- Use at least two Browser Object Model (BOM) properties or methods.
+- Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content.

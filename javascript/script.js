@@ -31,11 +31,11 @@ preferencePizza.addEventListener("input", function(event){
         //Add form validation to this for requiring lowercase or uppsercase CHEESE
         alert("CHEESE");
         homePizzaText.innerHTML = "<p>You would <em><b>not</b></em> like this pizza, it has pepperoni on it.</p>"
-
+        console.log(screen.height);
     } else if(preferredPizzaTop==="pepperoni"||preferredPizzaTop==="Pepperoni"){
         alert("PEPPERONI");
         frozenPizzaText.innerHTML = "<p>You would <em><b>LOVE</b></em> this pizza, it has pepperoni on it!</p>"
-
+        console.log(screen.width);
     }
 })
 
@@ -44,18 +44,30 @@ function bodyBackgroundColor(color){
     // The function changes the background color of the body
     document.querySelector("body").style.backgroundColor = color;
 }
+let fragment = document.createDocumentFragment();
 dropDownMenu.addEventListener("change", function(event){
     let dropValue = dropDownMenu.value;
     if(dropValue==="pepperoni"){
         //document.querySelector("body").style.backgroundColor = "red";
         bodyBackgroundColor("red");
+        window.alert("WARNING - THE BACKGROUND IS PEPPERONI");
         let pepperoniText = document.createElement("p")
         pepperoniText.innerHTML="<div class='card'>The background is now pepperoni!</div>"
-        document.body.appendChild(pepperoniText);
+        fragment.appendChild(pepperoniText);
     } else if (dropValue==="cheese"){
         bodyBackgroundColor("yellow");
-        let cheeseText = document.createElement("p")
+        window.alert("WARNING - THE BACKGROUND IS CHEESE");
+        
+        let cheeseText = document.createElement("p");
         cheeseText.innerHTML="<div class='card'>The background is now cheese!</div>"
-        document.body.appendChild(cheeseText);
+        fragment.appendChild(cheeseText);
     }
+    document.body.append(fragment);
 })
+
+
+email = document.getElementById("email");
+email.addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("ERROR");
+});
