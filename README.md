@@ -1,6 +1,7 @@
 # SBA-316-The-Document-Object-Model
 
 This is a recipe page on how to bake a pizza. - List Pizza Recipe as the content - Ragu Pizza Sauce
+Use this as an example ReadMe as a format guide: https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc
 
 **Instructions**
 
