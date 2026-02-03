@@ -39,9 +39,17 @@ preferencePizza.addEventListener("input", function(event){
     }
 })
 
-let email = document.getElementById("email");
-
-email.addEventListener("input", function(event){
-    console.log(email.value);
-
+let dropDownMenu = document.getElementById("pizza-dropdown");
+function bodyBackgroundColor(color){
+    // The function changes the background color of the body
+    document.querySelector("body").style.backgroundColor = color;
+}
+dropDownMenu.addEventListener("change", function(event){
+    let dropValue = dropDownMenu.value;
+    if(dropValue==="pepperoni"){
+        //document.querySelector("body").style.backgroundColor = "red";
+        bodyBackgroundColor("red");
+    } else if (dropValue==="cheese"){
+        bodyBackgroundColor("yellow");
+    }
 })
