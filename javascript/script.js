@@ -38,7 +38,7 @@ preferencePizza.addEventListener("input", function(event){
             frozenPizzaText.innerHTML = "<p>You would <em><b>LOVE</b></em> this pizza, it has pepperoni on it!</p>"
             console.log(screen.width);
         }
-    } else{
+    } else if(preferredPizzaTop.search(/[A-Z]/)>=1){
         event.preventDefault();
         alert("You have to enter full upercase!");
     }
