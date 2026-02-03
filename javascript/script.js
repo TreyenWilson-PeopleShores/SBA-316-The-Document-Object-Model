@@ -26,13 +26,13 @@ let homePizzaText = document.getElementById("homemadeBodyText");
 let frozenPizzaText = document.getElementById("frozenBodyText");
 
 preferencePizza.addEventListener("input", function(event){
-    preferedPizzaTop = preferencePizza.value;
-    if(preferedPizzaTop==="cheese"||preferedPizzaTop==="Cheese"){
+    preferredPizzaTop = preferencePizza.value;
+    if(preferredPizzaTop==="cheese"||preferredPizzaTop==="Cheese"){
         //Add form validation to this for requiring lowercase or uppsercase CHEESE
         alert("CHEESE");
         homePizzaText.innerHTML = "<p>You would <em><b>not</b></em> like this pizza, it has pepperoni on it.</p>"
 
-    } else if(preferedPizzaTop==="pepperoni"||preferedPizzaTop==="Pepperoni"){
+    } else if(preferredPizzaTop==="pepperoni"||preferredPizzaTop==="Pepperoni"){
         alert("PEPPERONI");
         frozenPizzaText.innerHTML = "<p>You would <em><b>LOVE</b></em> this pizza, it has pepperoni on it!</p>"
 
