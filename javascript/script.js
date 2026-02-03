@@ -49,7 +49,13 @@ dropDownMenu.addEventListener("change", function(event){
     if(dropValue==="pepperoni"){
         //document.querySelector("body").style.backgroundColor = "red";
         bodyBackgroundColor("red");
+        let pepperoniText = document.createElement("p")
+        pepperoniText.innerHTML="<div class='card'>The background is now pepperoni!</div>"
+        document.body.appendChild(pepperoniText);
     } else if (dropValue==="cheese"){
         bodyBackgroundColor("yellow");
+        let cheeseText = document.createElement("p")
+        cheeseText.innerHTML="<div class='card'>The background is now cheese!</div>"
+        document.body.appendChild(cheeseText);
     }
 })

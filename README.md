@@ -26,8 +26,7 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 
 # **TO-DO Requirements**
 
-- Create at least one element using createElement.
-- Use appendChild and/or prepend to add new elements to the DOM.
+
 - Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content.
 
 
@@ -50,3 +49,5 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 - Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
 - Iterate over a collection of elements to accomplish some task.
 - Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
+- Create at least one element using createElement.
+- Use appendChild and/or prepend to add new elements to the DOM.
