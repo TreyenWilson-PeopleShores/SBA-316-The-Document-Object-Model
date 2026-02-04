@@ -15,11 +15,6 @@ for (let i = 0; i<imageClass.childElementCount; i++){
 }
 console.log(images);
 
-//("preference-pizza").value;
-//prePizzaInput.addEventListener("input", function(event){
- //   console.log(prePizza);
-
-//})
 
 let preferencePizza = document.getElementById("preference-pizza");
 let homePizzaText = document.getElementById("homemadeBodyText");
@@ -27,9 +22,9 @@ let frozenPizzaText = document.getElementById("frozenBodyText");
 
 preferencePizza.addEventListener("input", function(event){
     preferredPizzaTop = preferencePizza.value;
-    if(preferredPizzaTop.search(/[a-z]/)===0){ //validation attempt - FAIL
+    if(/[a-z]/.test(preferredPizzaTop)===false){ 
+        //This checks if the input has any lowercase letters, if so, it doesn't, it allows the code to execute.
         if(preferredPizzaTop==="CHEESE"){
-            //Add form validation to this for requiring lowercase or uppsercase CHEESE
             alert("CHEESE");
             homePizzaText.innerHTML = "<p>You would <em><b>not</b></em> like this pizza, it has pepperoni on it.</p>"
             console.log(screen.height);
@@ -38,7 +33,7 @@ preferencePizza.addEventListener("input", function(event){
             frozenPizzaText.innerHTML = "<p>You would <em><b>LOVE</b></em> this pizza, it has pepperoni on it!</p>"
             console.log(screen.width);
         }
-    } else if(preferredPizzaTop.search(/[A-Z]/)>=1){
+    } else{
         event.preventDefault();
         alert("You have to enter full upercase!");
     }

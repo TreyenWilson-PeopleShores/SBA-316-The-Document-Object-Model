@@ -1,12 +1,7 @@
 # SBA-316-The-Document-Object-Model
+To run this, make sure to download each folder. Open the index.html in the html folder in a browser. Make sure each file is in the proper folder.
 
-This is a recipe page on how to bake a pizza. - List Pizza Recipe as the content - Ragu Pizza Sauce
-Use this as an example ReadMe as a format guide: https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc
-
-
-To run this, make sure to download each folder. Open the index.html in the html folder in a browser.
-
-This webpage is about pepperoni and cheese pizza. Various effects happened based on picking peperoni or cheese.
+This webpage is about pepperoni and cheese pizza. Various effects happened based on picking/typing peperoni or cheese.
 
 **Instructions**
 
@@ -35,11 +30,8 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 
 
 
-- Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, but should include event-based validation in addition to the HTML attribute validation.)
-- Ensure that the program runs without errors (comment out things that do not work, and explain your blockers - you can still receive partial credit).
-- Commit frequently to the git repository.
-- Include a README file that contains a description of your application.
-- Level of effort displayed in creativity, presentation, and user experience.
+
+
 
 
 # **Finished Requirements**
@@ -56,3 +48,8 @@ GIFs: Motion Elements, a resource for GIFs (and other media).
 - Use at least two Browser Object Model (BOM) properties or methods.
 - Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content.
 - Include at least one form and/or input with HTML attribute validation.
+- Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, but should include event-based validation in addition to the HTML attribute validation.)
+- Ensure that the program runs without errors (comment out things that do not work, and explain your blockers - you can still receive partial credit).
+- Commit frequently to the git repository.
+- Include a README file that contains a description of your application.
+- Level of effort displayed in creativity, presentation, and user experience.
